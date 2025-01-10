@@ -2,7 +2,6 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
-from django.core.asgi import get_asgi_application
 
 
 def main():
@@ -21,6 +20,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'mi_proyecto.settings')
-app = get_asgi_application()
